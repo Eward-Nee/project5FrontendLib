@@ -66,7 +66,7 @@ function Timer() {
             <p id="time-left">{format()}</p>
             {isRunning == false ? <button id="start_stop" onClick={startTimer}>Start</button> : <button id="start_stop" onClick={stopTimer}>Stop</button>}<br />
             <button id="reset" onClick={reset}>Reset all</button>
-            <audio src="src/sound.wav" ref={audioRef} id="beep"></audio>
+            <audio src="./src/sound.wav" ref={audioRef} id="beep"></audio>
 
         </div>
     )
