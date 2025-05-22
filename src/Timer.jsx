@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import "./general.css"
 import { useDispatch, useSelector } from "react-redux"
 import { actionTimer } from "./reducers"
+import soundFile from "./sound.wav"
 
 function Timer() {
     const [isRunning, setIsRunning] = useState(false)
@@ -66,7 +67,7 @@ function Timer() {
             <p id="time-left">{format()}</p>
             {isRunning == false ? <button id="start_stop" onClick={startTimer}>Start</button> : <button id="start_stop" onClick={stopTimer}>Stop</button>}<br />
             <button id="reset" onClick={reset}>Reset all</button>
-            <audio src="./src/sound.wav" ref={audioRef} id="beep"></audio>
+            <audio src={soundFile} ref={audioRef} id="beep"></audio>
 
         </div>
     )
