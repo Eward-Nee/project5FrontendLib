@@ -1,0 +1,41 @@
+.timer {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.session,
+.brake,
+.timer {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(235, 245, 253);
+    text-align: center;
+}
+
+.twoC {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-evenly;
+}
+
+.DIbutton {
+    width: 50px;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    margin: 5px 20px;
+}
+
+#timer-label.init {
+    background-color: rgb(210, 255, 199);
+}
+
+#timer-label.uninit {
+    background-color: rgb(255, 199, 199);
+}
+
+#timer-label {
+    font-size: 3em;
+    overflow: hidden;
+    margin-top: 10px;
+}
